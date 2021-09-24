@@ -1,4 +1,4 @@
-package ink.zhaibo;
+package cn.coder47;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

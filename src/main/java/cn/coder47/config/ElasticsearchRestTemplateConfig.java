@@ -1,4 +1,4 @@
-package ink.zhaibo.config;
+package cn.coder47.config;
 
 import org.elasticsearch.client.RestHighLevelClient;
 import org.springframework.beans.factory.annotation.Value;

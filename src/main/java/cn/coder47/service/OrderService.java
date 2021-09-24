@@ -1,7 +1,7 @@
-package ink.zhaibo.service;
+package cn.coder47.service;
 
-import ink.zhaibo.dto.PageResponse;
-import ink.zhaibo.model.Order;
+import cn.coder47.dto.PageResponse;
+import cn.coder47.model.Order;
 
 import java.util.List;
 

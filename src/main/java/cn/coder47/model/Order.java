@@ -1,4 +1,4 @@
-package ink.zhaibo.model;
+package cn.coder47.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

@@ -1,4 +1,4 @@
-package ink.zhaibo.controller;
+package cn.coder47.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;

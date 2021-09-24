@@ -1,8 +1,8 @@
-package ink.zhaibo.controller;
+package cn.coder47.controller;
 
+import cn.coder47.service.OrderService;
 import com.alibaba.fastjson.JSON;
-import ink.zhaibo.model.Order;
-import ink.zhaibo.service.OrderService;
+import cn.coder47.model.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;

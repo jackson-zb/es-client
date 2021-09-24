@@ -1,4 +1,4 @@
-package ink.zhaibo.dto;
+package cn.coder47.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

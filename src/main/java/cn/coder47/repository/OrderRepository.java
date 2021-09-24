@@ -1,6 +1,6 @@
-package ink.zhaibo.repository;
+package cn.coder47.repository;
 
-import ink.zhaibo.model.Order;
+import cn.coder47.model.Order;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 /**

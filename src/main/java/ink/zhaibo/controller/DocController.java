@@ -51,6 +51,15 @@ public class DocController {
     }
 
     /**
+     * 批量更新bulkUpdate
+     */
+    @GetMapping("bulkUpdate")
+    public String bulkUpdate(@RequestBody List<Order> orders) {
+        orderService.bulkUpdate(orders);
+        return "更新成功";
+    }
+
+    /**
      * 根据id搜索
      */
     @GetMapping("findById")
@@ -80,5 +89,21 @@ public class DocController {
     @GetMapping("findHighlight")
     public String findHighlight(@RequestBody(required = false) Order order, @RequestParam Integer pageIndex, @RequestParam Integer pageSize) {
         return JSON.toJSONString(orderService.findHighlight(order, pageIndex, pageSize));
+    }
+
+    /**
+     * Scroll搜索
+     */
+    @GetMapping("findScroll")
+    public String findScroll(@RequestBody(required = false) Order order, @RequestParam Integer pageIndex, @RequestParam Integer pageSize, @RequestParam String indexName, @RequestParam String scrollId) {
+        return JSON.toJSONString(orderService.findScroll(order, pageIndex, pageSize, indexName, scrollId));
+    }
+
+    /**
+     * wildcard自动补全
+     */
+    @GetMapping("suggest")
+    public String suggest(@RequestParam String keyword) {
+        return JSON.toJSONString(orderService.suggest(keyword));
     }
 }

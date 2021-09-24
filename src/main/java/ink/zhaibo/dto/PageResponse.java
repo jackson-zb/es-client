@@ -19,4 +19,6 @@ public class PageResponse<T> implements Serializable {
     private long total;
 
     private List<T> result;
+
+    private String scrollId;
 }

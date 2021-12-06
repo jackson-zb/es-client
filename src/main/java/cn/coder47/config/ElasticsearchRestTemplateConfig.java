@@ -16,10 +16,17 @@ public class ElasticsearchRestTemplateConfig extends AbstractElasticsearchConfig
     @Value("${spring.elasticsearch.rest.uris}")
     private String uris;
 
+    @Value("${spring.elasticsearch.rest.username}")
+    private String username;
+
+    @Value("${spring.elasticsearch.rest.password}")
+    private String password;
+
     @Override
     public RestHighLevelClient elasticsearchClient() {
         ClientConfiguration configuration = ClientConfiguration.builder()
                 .connectedTo(uris)
+                .withBasicAuth(username, password)
                 .build();
         return RestClients.create(configuration).rest();
     }

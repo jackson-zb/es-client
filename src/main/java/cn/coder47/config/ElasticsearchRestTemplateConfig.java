@@ -8,7 +8,7 @@ import org.springframework.data.elasticsearch.client.RestClients;
 import org.springframework.data.elasticsearch.config.AbstractElasticsearchConfiguration;
 
 /**
- * @Author: zhaibo
+ * @Author: jackson
  * @Date: 2021-08-31 16:24
  */
 @Configuration
